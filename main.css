@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background-color: #26282e;
+  color: #209781;
+  font-family: "Lobster", sans-serif;
+  font-size: 28px;
+}
+
+a:link {
+  color: #209781;
+  text-decoration: none;
+}
+a:visited {
+  color: #209781;
+}
+a:active {
+  color: #209781;
+}
+a:hover {
+  color: #e9b64a;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.rule {
+  font-size: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(3, 125px);
+  grid-template-columns: repeat(4, 125px);
+  justify-content: center;
+  gap: 6px;
+}
+
+.card {
+  border: solid 4px #51c8b2;
+  border-radius: 4px;
+  background-image: url(img/karta.png);
+  cursor: pointer;
+  filter: brightness(70%);
+  transition: all 0.3s ease-in-out;
+}
+
+.cardA {
+  border: solid 4px #e9b64a;
+  border-radius: 4px;
+  background-image: url(img/karta.png);
+  cursor: default;
+  filter: brightness(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  border: solid 4px #e9b64a;
+  filter: brightness(100%);
+}
+
+.score {
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.reload {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.reload:hover {
+  color: #e9b64a;
+}
